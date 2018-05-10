@@ -42,3 +42,4 @@ dependencies:
       - kiwisolver
       - mapboxgl
       - git+https://github.com/geopandas/geopandas.git
+      - git+https://github.com/earthlab/earthpy.git
