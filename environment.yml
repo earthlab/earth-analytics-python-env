@@ -30,6 +30,7 @@ dependencies:
   - jupyter_contrib_nbextensions
   - nb_conda
   - jupyterlab
+  - nb_conda_kernels
 
   - pip:
       # Utilities
