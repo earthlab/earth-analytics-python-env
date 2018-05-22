@@ -38,3 +38,13 @@ defined in the `environment.yml` file. Thus you'd type:
 
 to activate it once it's installed.
 
+## Docker Build
+
+Run the following lines to build the docker image locally:
+```
+cd earth-analytics-binder
+docker build -t earthlab/earth-analytics .
+docker run -it -p 8888:8888 earthlab/earth-analytics
+
+```
+
