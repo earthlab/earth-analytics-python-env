@@ -1,7 +1,14 @@
 # earth-analytics-environment
-a demo repo to test the ea envt in binder
+Welcome to the Earth Analytics Environment Repository! Here you will find a conda envt that can be installed on your computer using a ``.yml` file. You will also find a docker image that can be used to actually run the environment in a containerized environment.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/earthlab/earth-analytics-binder/master)
+
+## Contributors:
+
+* Leah A. Wasser
+* Chris Holdgraf
+* Max Joseph
+* Martha Morrissey
 
 ## Getting started with the Conda Environment
 
