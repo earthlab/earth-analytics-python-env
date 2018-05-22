@@ -37,8 +37,6 @@ defined in the `environment.yml` file. Thus you'd type:
 `source activate earth-analytics-python`
 
 to activate it once it's installed.
-<<<<<<< HEAD
-=======
 
 ## Docker Build
 
@@ -49,5 +47,3 @@ docker build -t earthlab/earth-analytics .
 docker run -it -p 8888:8888 earthlab/earth-analytics
 
 ```
-
->>>>>>> c1fae0cb43b1b55ed22e279769b61fcadb27a82a
