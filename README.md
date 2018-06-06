@@ -65,7 +65,7 @@ docker run -it -p 8888:8888 earthlab/earth-analytics
 
 To run your earth-analytics image you use the following code:
 
-`docker run -it -p 8888:8888 earthlab/earth-analytics`
+`docker run --hostname localhost -it -p 8888:8888 earthlab/earth-analytics-python-env`
 
 NOTE: `earthlab/earth-analytics` is the name of this image as built above. To
 view all images on your computer type
