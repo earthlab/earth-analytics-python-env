@@ -47,6 +47,10 @@ to activate it once it's installed.
 
 ## Docker Build
 
+[![Docker Automated build](https://img.shields.io/docker/automated/earthlab/earth-analytics-python-env.svg)](https://hub.docker.com/r/earthlab/earth-analytics-python-env/)
+
+[![Docker Build Status](https://img.shields.io/docker/build/earthlab/earth-analytics-python-env.svg)](https://hub.docker.com/r/earthlab/earth-analytics-python-env/)
+
 To run a docker container you need to do the following:
 
 1. [Install docker](https://docs.docker.com/install/) and make sure it is running.
@@ -55,21 +59,21 @@ To run a docker container you need to do the following:
 Run the following lines to build the docker image locally:
 
 ```
-cd earth-analytics-binder
-docker build -t earthlab/earth-analytics .
+cd earth-analytics-python-env
+docker build -t earthlab/earth-analytics-python-env .
 docker run -it -p 8888:8888 earthlab/earth-analytics
 
 ```
 
 3. Run the image.
 
-To run your earth-analytics image you use the following code:
+To run your earth-analytics image, use the following code:
 
-`docker run -it -p 8888:8888 earthlab/earth-analytics`
+`docker run -it -p 8888:8888 earthlab/earth-analytics-python-env`
 
-NOTE: `earthlab/earth-analytics` is the name of this image as built above. To
-view all images on your computer type
-`docker images -all`
+NOTE: `earthlab/earth-analytics-python-env` is the name of this image as built above. To
+view all images on your computer, type
+`docker images --all`
 
 One you run your image, you will be given a URL at the command line. Paste that puppy
 into your browser to run jupyter with the earth analytics environment installed!!
