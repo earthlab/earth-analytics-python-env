@@ -14,7 +14,12 @@ Welcome to the Earth Analytics Environment Repository! Here you will find a cond
 
 ### 1. Install the Earth Lab Conda Environment on your Local Computer.
 
-To begin, install the conda for Python 3.x. We suggest 3.6 now.
+To begin, install git and conda for Python 3.x (we suggest 3.6).
+
+Installing git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+Installing conda: https://www.anaconda.com/
+
 We recommend installing geo-related dependencies with `conda-forge`. We
 have created a custom yaml list with all of the dependencies that you will
 need to run the lessons in this course. Follow
@@ -22,12 +27,13 @@ these steps below to get your environment ready.
 
 About Conda Environments: https://conda.io/docs/user-guide/tasks/manage-environments.html
 
-An environment for conda has been created specifically for this course. To load this run:
+An environment for conda has been created specifically for this course. To load it, run:
 
 `conda env create -f environment.yml`
 
 * Note that it takes a bit of time to run this setup
-* Also note that for the code above to work, you need to be in the directory where the `environment.yml` file lives.
+* Also note that for the code above to work, you need to be in the directory where the `environment.yml` file lives (ex: cd earth-analytics-python-env).
+
 
 To manage your conda environments, use the following commands:
 
@@ -69,7 +75,7 @@ docker run -it -p 8888:8888 earthlab/earth-analytics
 
 To run your earth-analytics image, use the following code:
 
-`docker run -it -p 8888:8888 earthlab/earth-analytics-python-env`
+`docker run --hostname localhost -it -p 8888:8888 earthlab/earth-analytics-python-env`
 
 NOTE: `earthlab/earth-analytics-python-env` is the name of this image as built above. To
 view all images on your computer, type
