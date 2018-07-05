@@ -1,0 +1,5 @@
+#!/bin/bash
+
+SHA=`git rev-parse --short HEAD`
+
+docker build -t earthlab/earth-analytics-python-env:$SHA .
