@@ -1,11 +1,16 @@
 # earth-analytics-environment
 Welcome to the Earth Analytics Environment Repository! Here you will find a conda envt that can be installed on your computer using a ``.yml` file. You will also find a docker image that can be used to actually run the environment in a containerized environment.
 
+
+
+[![DOI](https://zenodo.org/badge/132847711.svg)](https://zenodo.org/badge/latestdoi/132847711)
+
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/earthlab/earth-analytics-binder/master)
 
 ## Contributors:
 
 * Leah A. Wasser
+* Tim Head
 * Chris Holdgraf
 * Max Joseph
 * Martha Morrissey
