@@ -39,7 +39,6 @@ An environment for conda has been created specifically for this course. To load 
 * Note that it takes a bit of time to run this setup
 * Also note that for the code above to work, you need to be in the directory where the `environment.yml` file lives (ex: cd earth-analytics-python-env).
 
-
 To manage your conda environments, use the following commands:
 
 #### View envs installed
@@ -88,3 +87,25 @@ view all images on your computer, type
 
 One you run your image, you will be given a URL at the command line. Paste that puppy
 into your browser to run jupyter with the earth analytics environment installed!!
+
+## Updating the Earth Analytics Environment
+
+If you wish to update the earth analytics environment, do the following.
+
+1. make a **PR** with changes to master
+2. **think** about your changes - don't do silly things or break things :)
+3. **merge** the PR into the master branch
+4. Check & wait till [Dockerhub](https://hub.docker.com/r/earthlab/earth-analytics-python-env/tags/) has built the image for the merging of the **PR** you can see builds in progress, [here](https://hub.docker.com/r/earthlab/earth-analytics-python-env/builds/)
+5. Finally, once the build is complete you can then you can update hub-ops repo with the newly tagged image.
+
+## Important Notes
+If the update the `earthpy` package, you must specify the commit number that you
+wish to build `earthpy` against. This will ensure that the docker image
+automagically rebuilds using the latest version of `earthpy`
+
+like this: `- git+https://github.com/earthlab/earthpy.git@283683affac9e46b1690c7913ebd2621c82ba43a`
+
+This PR should kick off a rebuild of the docker image. But that docker image will
+not be usable until it's built off of the master branch.
+
+NOTE 2: The DockerHub build actually takes forever and ever. So it's best to check out the build status rather than assuming it's built.
