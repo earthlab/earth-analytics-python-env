@@ -92,29 +92,20 @@ into your browser to run jupyter with the earth analytics environment installed!
 
 If you wish to update the earth analytics environment, do the following.
 
-1. add the package that you wish to add to the environment in a fork or separate branch
-2. submit a PR
+1. make a **PR** with changes to master
+2. **think** about your changes - don't do silly things or break things :)
+3. **merge** the PR into the master branch
+4. Check & wait till [Dockerhub](https://hub.docker.com/r/earthlab/earth-analytics-python-env/tags/) has built the image for the merging of the **PR** you can see builds in progress, [here](https://hub.docker.com/r/earthlab/earth-analytics-python-env/builds/)
+5. Finally, once the build is complete you can then you can update hub-ops repo with the newly tagged image.
 
-If the update is to `earthpy`, you must specify the commit number that you wish to build `earthpy` against. This will
-ensure that the docker image automagically rebuilds using the latest version of `earthpy`
+## Important Notes
+If the update the `earthpy` package, you must specify the commit number that you
+wish to build `earthpy` against. This will ensure that the docker image
+automagically rebuilds using the latest version of `earthpy`
 
 like this: `- git+https://github.com/earthlab/earthpy.git@283683affac9e46b1690c7913ebd2621c82ba43a`
 
-This PR should kick off a rebuild of the docker image.
+This PR should kick off a rebuild of the docker image. But that docker image will
+not be usable until it's built off of the master branch.
 
-But for things to be incorporated into the `JupyterHub` you need to 
-1. **merge** the `PR` submitted and then
-2. **WAIT** for this build to complete if you want to use the image as part of a
-user image for a `JupyterHub`. When it is complete you will see a new tagged docker
-container, here:
-You need to WAIT for this build to complete.
-When it is complete you will see a new tagged docker container, here:
-
-https://hub.docker.com/r/earthlab/earth-analytics-python-env/tags/
-
-The build actually takes some time. so it's best to check out the status here:
-
-https://hub.docker.com/r/earthlab/earth-analytics-python-env/builds/
-
-Once the build is complete you can then update the hub (if this is attached to a hub)
-with the commit hash to ensure that the correct, and most current docker image is being used.
+NOTE 2: The DockerHub build actually takes forever and ever. So it's best to check out the build status rather than assuming it's built.
