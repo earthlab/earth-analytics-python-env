@@ -104,3 +104,10 @@ This PR should kick off a rebuild of the docker image. You need to WAIT for this
 When it is complete you will see a new tagged docker container, here:
 
 https://hub.docker.com/r/earthlab/earth-analytics-python-env/tags/
+
+The build actually takes some time. so it's best to check out the status here:
+
+https://hub.docker.com/r/earthlab/earth-analytics-python-env/builds/
+
+Once the build is complete you can then update the hub (if this is attached to a hub)
+with the commit hash to ensure that the correct, and most current docker image is being used.
