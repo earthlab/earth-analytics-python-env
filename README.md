@@ -100,7 +100,14 @@ ensure that the docker image automagically rebuilds using the latest version of 
 
 like this: `- git+https://github.com/earthlab/earthpy.git@283683affac9e46b1690c7913ebd2621c82ba43a`
 
-This PR should kick off a rebuild of the docker image. You need to WAIT for this build to complete.
+This PR should kick off a rebuild of the docker image.
+
+But for things to be incorporated into the `JupyterHub` you need to 
+1. **merge** the `PR` submitted and then
+2. **WAIT** for this build to complete if you want to use the image as part of a
+user image for a `JupyterHub`. When it is complete you will see a new tagged docker
+container, here:
+You need to WAIT for this build to complete.
 When it is complete you will see a new tagged docker container, here:
 
 https://hub.docker.com/r/earthlab/earth-analytics-python-env/tags/
