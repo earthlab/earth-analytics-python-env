@@ -46,14 +46,20 @@ To manage your conda environments, use the following commands:
 
 #### Activate the environment that you'd like to use
 
-`source activate myenv-name`
+On Mac or Linux:
 
-In our case, the environment that we are using is called: `earth-analytics-python`. This name is
-defined in the `environment.yml` file. Thus you'd type:
+```
+source activate earth-analytics-python
+```
 
-`source activate earth-analytics-python`
+On Windows:
 
-to activate it once it's installed.
+```
+activate earth-analytics-python
+```
+
+The environment name is `earth-analytics-python` as
+defined in the `environment.yml` file.
 
 ## Docker Build
 
