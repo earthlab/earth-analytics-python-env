@@ -2,13 +2,6 @@ name: earth-analytics-python
 channels:
   - conda-forge
 dependencies:
-  # Core scientific python
-  - numpy
-  - matplotlib
-  - python=3.6
-  - pyqt
-  - seaborn
-
   # Geo stuff
   - rasterstats
   - geopy
@@ -19,7 +12,6 @@ dependencies:
   - pysal
   - pyproj
   - folium
-  - scikit-image
   - gdal
   - geocoder
   - geojson
@@ -28,23 +20,13 @@ dependencies:
   - tweepy
   - nltk
 
-  # Jupyter Environment
-  - notebook
-  - ipython
-  - jupyter_contrib_nbextensions
-  - jupyterlab
-  - nb_conda
-
-
   - pip:
       # Utilities
       - download
       - nbgrader
       - nbclean
       - mne
-      - sklearn
       - tqdm
-      - kiwisolver
       - mapboxgl
       - git+https://github.com/geopandas/geopandas.git
       - git+https://github.com/earthlab/earthpy.git@af51f956ed17b4d9ebf32623c23a8c0b9f8d265d
