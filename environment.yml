@@ -21,6 +21,7 @@ dependencies:
   - folium
   - scikit-image
   - gdal
+  - libgdal
   - geocoder
   - geojson
 
