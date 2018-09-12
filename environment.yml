@@ -21,6 +21,7 @@ dependencies:
   - folium
   - scikit-image
   - gdal
+  - libgdal
   - geocoder
   - geojson
 
@@ -42,9 +43,11 @@ dependencies:
       - nbgrader
       - nbclean
       - mne
-      - sklearn
       - tqdm
       - kiwisolver
+      # more ea stuff
       - mapboxgl
+      - sklearn
+      - hydrofunctions
       - git+https://github.com/geopandas/geopandas.git
       - git+https://github.com/earthlab/earthpy.git@af51f956ed17b4d9ebf32623c23a8c0b9f8d265d

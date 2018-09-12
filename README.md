@@ -1,6 +1,5 @@
 # earth-analytics-environment
-Welcome to the Earth Analytics Environment Repository! Here you will find a conda envt that can be installed on your computer using a ``.yml` file. You will also find a docker image that can be used to actually run the environment in a containerized environment.
-
+Welcome to the Earth Analytics Environment Repository! Here you will find a conda envt that can be installed on your computer using a `.yaml` file. You will also find a docker image that can be used to actually run the environment in a containerized environment.
 
 
 [![DOI](https://zenodo.org/badge/132847711.svg)](https://zenodo.org/badge/latestdoi/132847711)
@@ -46,14 +45,20 @@ To manage your conda environments, use the following commands:
 
 #### Activate the environment that you'd like to use
 
-`source activate myenv-name`
+On Mac or Linux:
 
-In our case, the environment that we are using is called: `earth-analytics-python`. This name is
-defined in the `environment.yml` file. Thus you'd type:
+```
+source activate earth-analytics-python
+```
 
-`source activate earth-analytics-python`
+On Windows:
 
-to activate it once it's installed.
+```
+activate earth-analytics-python
+```
+
+The environment name is `earth-analytics-python` as
+defined in the `environment.yml` file.
 
 ## Docker Build
 
