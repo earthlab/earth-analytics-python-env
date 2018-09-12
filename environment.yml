@@ -8,6 +8,9 @@ dependencies:
   - python=3.6
   - pyqt
   - seaborn
+  
+  # extentions
+  - autopep8
 
   # Geo stuff
   - rasterstats
