@@ -52,4 +52,4 @@ dependencies:
       - mapboxgl
       - sklearn
       - hydrofunctions
-      - git+https://github.com/earthlab/earthpy.git@af51f956ed17b4d9ebf32623c23a8c0b9f8d265d
+      - git+https://github.com/earthlab/earthpy.git@27308d7d6f4c3fbca1410b18be7d74b5de84f4a7
