@@ -38,6 +38,9 @@ An environment for conda has been created specifically for this course. To load 
 * Note that it takes a bit of time to run this setup
 * Also note that for the code above to work, you need to be in the directory where the `environment.yml` file lives (ex: cd earth-analytics-python-env).
 
+To update this environment from a yaml file use:
+`conda env update -f environment.yml`
+
 To manage your conda environments, use the following commands:
 
 #### View envs installed
