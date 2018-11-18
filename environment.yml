@@ -31,6 +31,7 @@ dependencies:
   # Natural language processing
   - tweepy
   - nltk
+  - textblob
 
   # Jupyter Environment
   - notebook
