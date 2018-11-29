@@ -25,6 +25,7 @@ dependencies:
   - scikit-image
   - gdal
   - libgdal
+  - kealib
   - geocoder
   - geojson
 
