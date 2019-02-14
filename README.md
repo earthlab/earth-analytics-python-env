@@ -79,7 +79,7 @@ Run the following lines to build the docker image locally:
 ```
 cd earth-analytics-python-env
 docker build -t earthlab/earth-analytics-python-env .
-docker run -it -p 8888:8888 earthlab/earth-analytics
+docker run -it -p 8888:8888 earthlab/earth-analytics-python-env
 
 ```
 
