@@ -9,6 +9,9 @@ dependencies:
   - pyqt
   - seaborn
 
+  # Extensions
+  - autopep8
+
   # Geo stuff
   - rasterstats
   - geopy
@@ -21,8 +24,15 @@ dependencies:
   - folium
   - scikit-image
   - gdal
+  - libgdal
+  - kealib
   - geocoder
   - geojson
+
+  # Natural language processing
+  - tweepy
+  - nltk
+  - textblob
 
   # Jupyter Environment
   - notebook
@@ -38,9 +48,10 @@ dependencies:
       - nbgrader
       - nbclean
       - mne
-      - sklearn
       - tqdm
       - kiwisolver
+      # EA tools via pip
       - mapboxgl
-      - git+https://github.com/geopandas/geopandas.git
-      - git+https://github.com/earthlab/earthpy.git
+      - sklearn
+      - hydrofunctions
+      - git+https://github.com/earthlab/earthpy.git@ad143d31ab4386eba93080a1803fea291d8ed684
