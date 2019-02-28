@@ -1,5 +1,6 @@
 name: earth-analytics-python
 channels:
+  - nodefaults
   - conda-forge
 dependencies:
   # Core scientific python
