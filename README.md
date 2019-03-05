@@ -48,6 +48,13 @@ To manage your conda environments, use the following commands:
 
 #### Activate the environment that you'd like to use
 
+[Conda 4.6 and later versions (all operating systems):](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+```
+conda activate earth-analytics-python
+``` 
+
+[Conda versions prior to 4.6:](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+
 On Mac or Linux:
 
 ```
