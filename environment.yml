@@ -9,6 +9,9 @@ dependencies:
   - python=3.6
   - pyqt
   - seaborn
+  - tqdm
+  - kiwisolver
+  - scikit-learn
 
   # Extensions
   - autopep8
@@ -41,18 +44,13 @@ dependencies:
   - jupyter_contrib_nbextensions
   - jupyterlab
   - nb_conda
-
+  - nbgrader
 
   - pip:
       # Utilities
       - download
-      - nbgrader
       - nbclean
-      - mne
-      - tqdm
-      - kiwisolver
       # EA tools via pip
       - mapboxgl
-      - sklearn
       - hydrofunctions
-      - git+https://github.com/earthlab/earthpy.git@ad143d31ab4386eba93080a1803fea291d8ed684
+      - earthpy
