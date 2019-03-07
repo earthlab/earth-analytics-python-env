@@ -5,7 +5,7 @@ dependencies:
   # Core scientific python
   - numpy
   - matplotlib
-  - python>3.6
+  - python>=3.6
   - pyqt
   - seaborn
   - tqdm
@@ -21,13 +21,11 @@ dependencies:
   - pysal
   - pyproj
   - folium
-  - scikit-image
   - gdal
   - libgdal
   - kealib
   - geocoder
   - geojson
-  - scikit-learn
 
   # Natural language processing
   - tweepy
