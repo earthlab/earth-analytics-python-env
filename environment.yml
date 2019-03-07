@@ -1,6 +1,7 @@
 name: earth-analytics-python
 channels:
   - conda-forge
+  - nodefaults
 dependencies:
   # Core scientific python
   - openssl
@@ -9,18 +10,17 @@ dependencies:
   - python>=3.6
   - tornado=5.1.1
   - pyqt
-  - seaborn
+  #- seaborn
   - tqdm
-  - kiwisolver
 
   # Spatial libraries
   - rasterstats
   - geopy
-  - cartopy
-  - geopandas
+  #- cartopy
+  #- geopandas
   - rasterio
-  - contextily
-  - pysal
+  #- contextily
+  #- pysal
   - pyproj
   - folium
   - gdal
@@ -50,4 +50,3 @@ dependencies:
       - mapboxgl
       - hydrofunctions
       - earthpy
-      - scipy
