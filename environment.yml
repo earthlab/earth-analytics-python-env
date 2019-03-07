@@ -1,11 +1,14 @@
 name: earth-analytics-python
 channels:
+  - nodefaults
   - conda-forge
+
 dependencies:
   # Core scientific python
   - numpy
   - matplotlib
   - python>=3.6
+  - tornado=5.1.1
   - pyqt
   - seaborn
   - tqdm
