@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   # Core scientific python
+  - openssl
   - numpy
   - matplotlib
   - python>=3.6
