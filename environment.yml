@@ -7,15 +7,13 @@ dependencies:
   - numpy
   - matplotlib
   - python>=3.6
+  - tornado=5.1.1
   - pyqt
   - seaborn
   - tqdm
   - kiwisolver
 
-  # Extensions
-  - autopep8
-
-  # Geo stuff
+  # Spatial libraries
   - rasterstats
   - geopy
   - cartopy
@@ -25,7 +23,6 @@ dependencies:
   - pysal
   - pyproj
   - folium
-  - scikit-image
   - gdal
   - libgdal
   - kealib
@@ -38,12 +35,12 @@ dependencies:
   - textblob
 
   # Jupyter Environment
+  - autopep8
   - notebook
   - ipython
   - jupyter_contrib_nbextensions
   - jupyterlab
   - nb_conda
-  - nbgrader
 
   - pip:
       # Utilities
