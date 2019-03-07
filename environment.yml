@@ -53,3 +53,4 @@ dependencies:
       - mapboxgl
       - hydrofunctions
       - earthpy
+      - scipy
