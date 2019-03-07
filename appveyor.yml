@@ -15,6 +15,7 @@ install:
   - "set PATH=%MINICONDA%;%MINICONDA%\\Scripts;%PATH%"
   - conda config --set always_yes yes --set show_channel_urls true --set changeps1 no
   - conda update -q conda
+  - conda update --all
   - conda env create -f environment.yml
 
 test_script:
