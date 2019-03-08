@@ -11,7 +11,6 @@ dependencies:
   - pyqt
   - seaborn
   - tqdm
-  - kiwisolver
 
   # Spatial libraries
   - rasterstats
@@ -50,4 +49,3 @@ dependencies:
       - mapboxgl
       - hydrofunctions
       - earthpy
-      - scipy
