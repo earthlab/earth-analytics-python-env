@@ -4,7 +4,6 @@ channels:
 dependencies:
   # Core scientific python
   - openssl
-  #- numpy
   - matplotlib
   - python>=3.6
   - tornado=5.1.1
@@ -17,6 +16,7 @@ dependencies:
   - geopy
   - cartopy
   - geopandas
+  - numpy
   - rasterio
   - contextily
   - pysal
