@@ -48,4 +48,4 @@ dependencies:
       # EA tools via pip
       #- mapboxgl
       #- hydrofunctions
-      - earthpy
+      #- earthpy
