@@ -47,4 +47,5 @@ dependencies:
       # EA tools via pip
       - mapboxgl
       - hydrofunctions
-      - git+https://github.com/earthlab/earthpy.git@cdfb644eba02b2ab43d8ce16baa76f4ea478cfcd
+      - numpy
+      - earthpy
