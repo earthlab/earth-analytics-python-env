@@ -16,7 +16,7 @@ dependencies:
   #- geopy
   #- cartopy
   #- geopandas
-  #- numpy
+  - numpy
   - rasterio
   #- contextily
   #- pysal
