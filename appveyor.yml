@@ -3,7 +3,7 @@ matrix:
 
 environment:
   matrix:
-    - PYTHON_VERSION: "3.6"
+    - PYTHON_VERSION: "3.7.1"
       MINICONDA: C:\Miniconda36-x64
 
 build: false
