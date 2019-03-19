@@ -1,19 +1,19 @@
 name: earth-analytics-python
 channels:
-  - nodefaults
   - conda-forge
+
 dependencies:
   # Core scientific python
   - numpy
   - matplotlib
-  - python=3.6
+  - python>=3.6
+  - tornado=5.1.1
   - pyqt
   - seaborn
+  - tqdm
+  - kiwisolver
 
-  # Extensions
-  - autopep8
-
-  # Geo stuff
+  # Spatial packages
   - rasterstats
   - geopy
   - cartopy
@@ -23,7 +23,6 @@ dependencies:
   - pysal
   - pyproj
   - folium
-  - scikit-image
   - gdal
   - libgdal
   - kealib
@@ -36,6 +35,7 @@ dependencies:
   - textblob
 
   # Jupyter Environment
+  - autopep8
   - notebook
   - ipython
   - jupyter_contrib_nbextensions
@@ -46,13 +46,10 @@ dependencies:
   - pip:
       # Utilities
       - download
-      - nbgrader
       - nbclean
-      - mne
-      - tqdm
-      - kiwisolver
+
       # EA tools via pip
       - mapboxgl
       - sklearn
       - hydrofunctions
-      - git+https://github.com/earthlab/earthpy.git@ad143d31ab4386eba93080a1803fea291d8ed684
+      - earthpy
