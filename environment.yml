@@ -43,9 +43,9 @@ dependencies:
 
   - pip:
       # Utilities
-      #- download
+      - download
       #- nbclean
       # EA tools via pip
       #- mapboxgl
       #- hydrofunctions
-      #- earthpy
+      - earthpy [--no-deps]
