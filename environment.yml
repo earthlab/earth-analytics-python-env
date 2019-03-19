@@ -42,7 +42,6 @@ dependencies:
   - jupyterlab
   - nb_conda
 
-
   - pip:
       # Utilities
       - download

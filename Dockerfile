@@ -11,5 +11,6 @@ RUN conda info --envs
 RUN conda list
 
 RUN python -c "import rasterio"
+RUN python -c "import earthpy"
 
 RUN rm environment.yml
