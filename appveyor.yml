@@ -24,4 +24,4 @@ test_script:
   - activate earth-analytics-python
   - conda list
   - python -c "import rasterio"
-  #- python -c "import earthpy"
+  - python -c "import earthpy"
