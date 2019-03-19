@@ -16,10 +16,12 @@ install:
   - conda config --set always_yes yes --set show_channel_urls true --set changeps1 no
   - conda update -q conda
   - conda update --all
+  - conda config --add channels conda-forge
+  - conda config --set channel_priority strict
   - conda env create -f environment.yml
 
 test_script:
   - activate earth-analytics-python
   - conda list
   - python -c "import rasterio"
-  - python -c "import earthpy"
+  #- python -c "import earthpy"
