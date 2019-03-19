@@ -51,4 +51,5 @@ dependencies:
       - mapboxgl
       - sklearn
       - hydrofunctions
-      - earthpy [--no-deps]
+      - [--no-deps]
+      - earthpy
