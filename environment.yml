@@ -7,11 +7,11 @@ dependencies:
   - numpy
   - matplotlib
   - python>=3.6
-  - tornado=5.1.1
   - pyqt
   - seaborn
   - tqdm
   - kiwisolver
+  - pip
 
   # Spatial packages
   - rasterstats
@@ -28,6 +28,7 @@ dependencies:
   - kealib
   - geocoder
   - geojson
+  - earthpy
 
   # Natural language processing
   - tweepy
@@ -43,12 +44,7 @@ dependencies:
   - nb_conda
 
   - pip:
-      # Utilities
-      - download
       - nbclean
-
-      # EA tools via pip
       - mapboxgl
-      - sklearn
       - hydrofunctions
-      - earthpy
+      - scikit-learn
