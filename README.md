@@ -1,10 +1,13 @@
 # earth-analytics-environment
+
+[![Build Status](https://travis-ci.com/earthlab/earth-analytics-python-env.svg?branch=master)](https://travis-ci.com/earthlab/earth-analytics-python-env)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/38a49nccgpl1metv?svg=true)](https://ci.appveyor.com/project/mbjoseph/earth-analytics-python-env)
+[![DOI](https://zenodo.org/badge/132847711.svg)](https://zenodo.org/badge/latestdoi/132847711)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/earthlab/earth-analytics-binder/master)
+
+
 Welcome to the Earth Analytics Environment Repository! Here you will find a conda envt that can be installed on your computer using a `.yaml` file. You will also find a docker image that can be used to actually run the environment in a containerized environment.
 
-
-[![DOI](https://zenodo.org/badge/132847711.svg)](https://zenodo.org/badge/latestdoi/132847711)
-
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/earthlab/earth-analytics-binder/master)
 
 ## Contributors:
 
@@ -51,7 +54,7 @@ To manage your conda environments, use the following commands:
 [Conda 4.6 and later versions (all operating systems):](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 ```
 conda activate earth-analytics-python
-``` 
+```
 
 [Conda versions prior to 4.6:](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
