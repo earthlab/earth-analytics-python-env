@@ -41,7 +41,5 @@ dependencies:
   - nb_conda
 
   - pip:
-      - nbclean
       - mapboxgl
       - hydrofunctions
-      - scikit-learn
