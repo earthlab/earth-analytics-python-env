@@ -4,11 +4,8 @@ channels:
 
 dependencies:
   # Core scientific python
-  - numpy
-  - matplotlib
   - python>=3.6
   - pyqt
-  - seaborn
   - tqdm
   - kiwisolver
   - pip
