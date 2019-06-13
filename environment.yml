@@ -26,12 +26,12 @@ dependencies:
   - gdal
   - libgdal
   - kealib
-  - geocoder
+#  - geocoder
   - geojson
   - earthpy
 
   # Natural language processing
-  - tweepy
+#  - tweepy
   - nltk
   - textblob
 
@@ -48,3 +48,5 @@ dependencies:
       - mapboxgl
       - hydrofunctions
       - scikit-learn
+      - geocoder
+      - tweepy
