@@ -26,12 +26,10 @@ dependencies:
   - gdal
   - libgdal
   - kealib
-#  - geocoder
   - geojson
   - earthpy
 
   # Natural language processing
-#  - tweepy
   - nltk
   - textblob
 
