@@ -4,7 +4,7 @@
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/38a49nccgpl1metv?svg=true)](https://ci.appveyor.com/project/mbjoseph/earth-analytics-python-env)
 [![DOI](https://zenodo.org/badge/132847711.svg)](https://zenodo.org/badge/latestdoi/132847711)
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/earthlab/earth-analytics-binder/master)
-
+[![](https://images.microbadger.com/badges/image/earthlab/earth-analytics-python-env.svg)](https://microbadger.com/images/earthlab/earth-analytics-python-env "EA-Environment Docker Stats")
 
 Welcome to the Earth Analytics Environment Repository! Here you will find a conda envt that can be installed on your computer using a `.yaml` file. You will also find a docker image that can be used to actually run the environment in a containerized environment.
 
