@@ -27,7 +27,7 @@ install:
   - conda env create -f environment.yml
 
 test_script:
-  - activate earth-analytics-python
+  - conda activate earth-analytics-python
   - conda list
   - python -c "import rasterio"
   - python -c "import earthpy"
