@@ -12,16 +12,22 @@ init:
   - "ECHO %PYTHON_VERSION% %MINICONDA%"
 
 install:
-  - "set PATH=%MINICONDA%;%MINICONDA%\\Scripts;%PATH%"
+# Set up environment - following geopandas fix
+  - CALL "%MINICONDA%\\Scripts\\activate.bat"
+  #- "set PATH=%MINICONDA%;%MINICONDA%\\Scripts;%PATH%"
   - conda config --set always_yes yes --set show_channel_urls true --set changeps1 no
   - conda update -q conda
+  # Once again what geopandas does - this is basically equivalent to what conda init does.  It changes the "conda" to
+  #    be a .bat script that sets appropriate PATH entries before conda hits problems.
+  #  This PATH modification only works with conda 4.6+, but it won't hurt other versions.
+  - set "PATH=%MINICONDA%\condabin:%PATH%"
   - conda update --all
   - conda config --add channels conda-forge
   - conda config --set channel_priority strict
   - conda env create -f environment.yml
 
 test_script:
-  - activate earth-analytics-python
+  - conda activate earth-analytics-python
   - conda list
   - python -c "import rasterio"
   - python -c "import earthpy"
