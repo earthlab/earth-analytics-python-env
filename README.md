@@ -5,6 +5,7 @@
 [![DOI](https://zenodo.org/badge/132847711.svg)](https://zenodo.org/badge/latestdoi/132847711)
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/earthlab/earth-analytics-binder/master)
 [![](https://images.microbadger.com/badges/image/earthlab/earth-analytics-python-env.svg)](https://microbadger.com/images/earthlab/earth-analytics-python-env "EA-Environment Docker Stats")
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/earthlab/earth-analytics-python-env?style=plastic)
 
 Welcome to the Earth Analytics Environment Repository! Here you will find a conda envt that can be installed on your computer using a `.yaml` file. You will also find a docker image that can be used to actually run the environment in a containerized environment.
 
@@ -76,8 +77,6 @@ defined in the `environment.yml` file.
 ## Docker Build
 
 [![Docker Automated build](https://img.shields.io/docker/automated/earthlab/earth-analytics-python-env.svg)](https://hub.docker.com/r/earthlab/earth-analytics-python-env/)
-
-[![Docker Build Status](https://img.shields.io/docker/build/earthlab/earth-analytics-python-env.svg)](https://hub.docker.com/r/earthlab/earth-analytics-python-env/)
 
 To run a docker container you need to do the following:
 
