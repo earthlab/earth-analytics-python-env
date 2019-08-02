@@ -1,17 +1,18 @@
 name: earth-analytics-python
 channels:
   - conda-forge
+  - defaults
 
 dependencies:
+  - python=3.7
+  - pip
   # Core scientific python
   - numpy
   - matplotlib
-  - python=3.7
   - pyqt
   - seaborn
   - tqdm
   - kiwisolver
-  - pip
 
   # Spatial packages
   - rasterstats
@@ -23,9 +24,6 @@ dependencies:
   - pysal
   - pyproj
   - folium
-  - gdal
-  - libgdal
-  - kealib
   - geojson
   - earthpy
 
@@ -40,11 +38,9 @@ dependencies:
   - jupyter_contrib_nbextensions
   - jupyterlab
   - nb_conda
-
-  - pip:
-      - nbclean
-      - mapboxgl
-      - hydrofunctions
-      - scikit-learn
-      - geocoder
-      - tweepy
+  - nbclean
+  - mapboxgl
+  - hydrofunctions
+  - scikit-learn
+  - geocoder
+  - tweepy
