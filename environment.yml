@@ -19,28 +19,29 @@ dependencies:
   - geopy
   - cartopy
   - geopandas
-  - rasterio
   - contextily
-  - pysal
-  - pyproj
+  - earthpy
   - folium
   - geojson
-  - earthpy
-
+  # The items below are already in the conda distribution
+  - rasterio  # this is also in the conda distribution but i feel as if it should be installed w conda forge
+  - pysal
+  - pyproj
+  - mapboxgl
+  - hydrofunctions
+  - geocoder
+  - tweepy
+  
   # Natural language processing
-  - nltk
+  #- nltk #already in the anaconda distribution
   - textblob
 
   # Jupyter Environment
   - autopep8
-  - notebook
-  - ipython
+  #- notebook
+  # I don't think we need ipython
+  #- ipython
+  # This is not in anaconda explicetly 
   - jupyter_contrib_nbextensions
-  - jupyterlab
-  - nb_conda
   - nbclean
-  - mapboxgl
-  - hydrofunctions
-  - scikit-learn
-  - geocoder
-  - tweepy
+
