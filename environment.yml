@@ -23,22 +23,23 @@ dependencies:
   - earthpy
   - folium
   - geojson
-  # The items below are already in the conda distribution
-  - rasterio  # this is also in the conda distribution but i feel as if it should be installed w conda forge
-  - pysal
-  - pyproj
   - mapboxgl
   - hydrofunctions
   - geocoder
   - tweepy
   
+  # The items below are already in the conda distribution
+  - rasterio  # this is also in the conda distribution but i feel as if it should be installed w conda forge
+  - pysal
+  - pyproj
+
   # Natural language processing
   #- nltk #already in the anaconda distribution
   - textblob
 
   # Jupyter Environment
   - autopep8
-  #- notebook
+  #- notebook # i don't think we need this either. it was the case i had a dated version of notebook... 
   # I don't think we need ipython
   #- ipython
   # This is not in anaconda explicetly 
