@@ -15,6 +15,9 @@ dependencies:
   - kiwisolver
 
   # Spatial packages
+  - rasterio  
+  - pysal
+  - pyproj
   - rasterstats
   - geopy
   - cartopy
@@ -27,22 +30,21 @@ dependencies:
   - hydrofunctions
   - geocoder
   - tweepy
-  
-  # The items below are already in the conda distribution
-  - rasterio  # this is also in the conda distribution but i feel as if it should be installed w conda forge
-  - pysal
-  - pyproj
 
   # Natural language processing
-  #- nltk #already in the anaconda distribution
+  - nltk 
   - textblob
 
   # Jupyter Environment
   - autopep8
-  #- notebook # i don't think we need this either. it was the case i had a dated version of notebook... 
-  # I don't think we need ipython
-  #- ipython
+  - jupyterlab
+  - notebook 
+  # Do we need this?
+  - ipython
   # This is not in anaconda explicetly 
   - jupyter_contrib_nbextensions
   - nbclean
+  # Natural language processing
+  - matplotcheck
+  - nbgrader
 
