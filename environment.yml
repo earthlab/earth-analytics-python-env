@@ -41,10 +41,9 @@ dependencies:
   - notebook 
   # Do we need this?
   - ipython
-  # This is not in anaconda explicetly 
   - jupyter_contrib_nbextensions
   - nbclean
-  # Natural language processing
+  # Autograding
   - matplotcheck
   - nbgrader
 
