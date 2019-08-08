@@ -1,6 +1,6 @@
-FROM jupyter/scipy-notebook
+FROM jupyter/minimal-notebook
 
-MAINTAINER Max Joseph <maxwell.b.joseph@colorado.edu>
+MAINTAINER Leah Wasser <leah.wasser@colorado.edu>
 
 COPY environment.yml environment.yml
 
