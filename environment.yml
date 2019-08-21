@@ -15,32 +15,35 @@ dependencies:
   - kiwisolver
 
   # Spatial packages
+  #- rasterio  
+  - pysal
+  - pyproj
   - rasterstats
   - geopy
   - cartopy
-  - geopandas
-  - rasterio
+  #- geopandas
   - contextily
-  - pysal
-  - pyproj
+  - earthpy
   - folium
   - geojson
-  - earthpy
+  - mapboxgl
+  - hydrofunctions
+  - geocoder
+  - tweepy
 
   # Natural language processing
-  - nltk
+  - nltk 
   - textblob
 
   # Jupyter Environment
   - autopep8
-  - notebook
+  - jupyterlab
+  - notebook 
+  # Do we need this?
   - ipython
   - jupyter_contrib_nbextensions
-  - jupyterlab
-  - nb_conda
   - nbclean
-  - mapboxgl
-  - hydrofunctions
-  - scikit-learn
-  - geocoder
-  - tweepy
+  # Autograding
+  - matplotcheck
+  - nbgrader
+
