@@ -15,13 +15,13 @@ dependencies:
   - kiwisolver
 
   # Spatial packages
-  - rasterio  
+  #- rasterio  
   - pysal
   - pyproj
   - rasterstats
   - geopy
   - cartopy
-  - geopandas
+  #- geopandas
   - contextily
   - earthpy
   - folium
