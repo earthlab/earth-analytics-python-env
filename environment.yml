@@ -45,5 +45,5 @@ dependencies:
   - nbclean
   # Autograding
   - matplotcheck
-  - nbgrader=0.5.6
+  - nbgrader
 
