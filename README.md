@@ -12,10 +12,11 @@ Welcome to the Earth Analytics Environment Repository! Here you will find a cond
 
 ## Contributors:
 
-* Leah A. Wasser
-* Tim Head
-* Chris Holdgraf
-* Max Joseph
+* Leah A. Wasser (@lwasser)
+* Filipe fernandes (@ocefpaf)
+* Tim Head (@betatim)
+* Chris Holdgraf (@choldgraf)
+* Max Joseph  (@mbjoseph)
 * Martha Morrissey
 
 ## Getting started with the Conda Environment
