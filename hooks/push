@@ -3,3 +3,4 @@
 SHA=`git rev-parse --short HEAD`
 
 docker push earthlab/earth-analytics-python-env:$SHA
+docker push earthlab/earth-analytics-python-env:hub-image
