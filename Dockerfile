@@ -7,7 +7,8 @@ COPY environment.yml environment.yml
 RUN conda env update -n root -f environment.yml \
   && conda info --envs \
   && conda list \
-  && rm environment.yml
+  && rm environment.yml \
+  && . activate base
 
 # Test imports
 RUN python -c "import rasterio"
