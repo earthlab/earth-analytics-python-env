@@ -2,9 +2,6 @@
 
 SHA=`git rev-parse --short HEAD`
 
-#docker push earthlab/earth-analytics-python-env:$SHA
-#docker push earthlab/earth-analytics-python-env:hub-image
-
 # Get current branch
 current_branch="$(git name-rev --name-only HEAD)"
 echo $current_branch
