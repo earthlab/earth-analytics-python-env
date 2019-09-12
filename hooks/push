@@ -2,4 +2,17 @@
 
 SHA=`git rev-parse --short HEAD`
 
-docker push earthlab/earth-analytics-python-env:$SHA
+# Get current branch
+current_branch="$(git name-rev --name-only HEAD)"
+echo $current_branch
+
+if [ "$current_branch" == "master" ]
+then
+  # Create a tag for that commit number to use for tracking but also update latest
+  docker push earthlab/earth-analytics-python-env:$SHA
+  docker push earthlab/earth-analytics-python-env:latest
+else
+  # Push a tagged build for that particular branch only
+  # This will reduce the number of commit based tags in our environment
+  docker push earthlab/earth-analytics-python-env:$current_branch
+fi

@@ -1,4 +1,4 @@
-#
+.mypy_cache/
 .DS_Store
-3.6
 .nbgrader.log
+3.6
