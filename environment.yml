@@ -1,57 +1,49 @@
 name: earth-analytics-python
 channels:
   - conda-forge
+  - defaults
+
 dependencies:
+  - python=3.7
+  - pip
   # Core scientific python
   - numpy
   - matplotlib
-  - python=3.6
   - pyqt
   - seaborn
+  - tqdm
+  - kiwisolver
 
-  # Extensions
-  - autopep8
-
-  # Geo stuff
+  # Spatial packages
+  #- rasterio  
+  - pysal
+  - pyproj
   - rasterstats
   - geopy
   - cartopy
-  - geopandas
-  - rasterio
+  #- geopandas
   - contextily
-  - pysal
-  - pyproj
+  - earthpy
   - folium
-  - scikit-image
-  - gdal
-  - libgdal
-  - kealib
-  - geocoder
   - geojson
+  - mapboxgl
+  - hydrofunctions
+  - geocoder
+  - tweepy
 
   # Natural language processing
-  - tweepy
-  - nltk
+  - nltk 
   - textblob
 
   # Jupyter Environment
-  - notebook
+  - autopep8
+  - jupyterlab
+  - notebook 
+  # Do we need this?
   - ipython
   - jupyter_contrib_nbextensions
-  - jupyterlab
-  - nb_conda
+  - nbclean
+  # Autograding
+  - matplotcheck
+  - nbgrader
 
-
-  - pip:
-      # Utilities
-      - download
-      - nbgrader
-      - nbclean
-      - mne
-      - tqdm
-      - kiwisolver
-      # EA tools via pip
-      - mapboxgl
-      - sklearn
-      - hydrofunctions
-      - git+https://github.com/earthlab/earthpy.git@ad143d31ab4386eba93080a1803fea291d8ed684
