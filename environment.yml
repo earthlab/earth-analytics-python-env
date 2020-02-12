@@ -36,10 +36,10 @@ dependencies:
   - textblob
 
   # Jupyter Environment
+  - papermill
   - autopep8
   - jupyterlab
   - notebook 
-  # Do we need this?
   - ipython
   - jupyter_contrib_nbextensions
   - nbclean
