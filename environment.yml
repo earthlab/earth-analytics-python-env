@@ -30,6 +30,8 @@ dependencies:
   - hydrofunctions
   - geocoder
   - tweepy
+  - xarray
+  - scipy
 
   # Natural language processing
   - nltk 
