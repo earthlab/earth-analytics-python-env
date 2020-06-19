@@ -23,7 +23,7 @@ dependencies:
   - cartopy
   #- geopandas
   - contextily
-  - earthpy
+  - earthpy>0.9.1
   - folium
   - geojson
   - mapboxgl
