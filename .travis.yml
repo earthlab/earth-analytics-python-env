@@ -15,3 +15,4 @@ script:
   - export PATH="$HOME/miniconda/bin:$PATH"
   - conda activate earth-analytics-python
   - python -c "import earthpy"
+  - conda list
