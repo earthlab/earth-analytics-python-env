@@ -4,7 +4,7 @@ channels:
   - defaults
 
 dependencies:
-  - python=3.7
+  - python=3.8
   - pip
   # Core scientific python
   - numpy
@@ -15,15 +15,16 @@ dependencies:
   - kiwisolver
 
   # Spatial packages
-  #- rasterio  
+  #- rasterio
   - pysal
   - pyproj
   - rasterstats
   - geopy
   - cartopy
   #- geopandas
+  - descartes
   - contextily
-  - earthpy>0.9.1
+  - earthpy=0.9.2
   - folium
   - geojson
   - mapboxgl
@@ -34,18 +35,17 @@ dependencies:
   - scipy
 
   # Natural language processing
-  - nltk 
+  - nltk
   - textblob
 
   # Jupyter Environment
   - papermill
   - autopep8
   - jupyterlab
-  - notebook 
+  - notebook
   - ipython
   - jupyter_contrib_nbextensions
   - nbclean
   # Autograding
   - matplotcheck>=0.1.2
   - nbgrader
-
