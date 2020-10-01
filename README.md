@@ -31,13 +31,13 @@ Installing miniconda: https://docs.conda.io/en/latest/miniconda.html
 
 About Conda Environments: https://conda.io/docs/user-guide/tasks/manage-environments.html
 
-### Tutorial On Setup
+### 2. Tutorial On Setup
 If you want a more detailed tutorial on setting up this environment using miniconda, 
 please visit our learning portal: https://www.earthdatascience.org/workshops/setup-earth-analytics-python/
 
 We recommend installing everything using the with `conda-forge` channel. 
 
-### Quick Start: Setup Your Environment
+### 3. Quick Start: Setup Your Environment
 
 The tutorial above will provide you with more detailed setup instructions.
 But here are the cliff notes:
@@ -53,7 +53,7 @@ This will take a bit of time to run.
 `$ cd earth-analytics-python-env`
 
 
-### Update Your EA Environment from the YAML File
+### 4. Update Your EA Environment from the YAML File
 
 You can update your environment at any time using:
 
@@ -61,10 +61,10 @@ You can update your environment at any time using:
 
 To manage your conda environments, use the following commands:
 
-#### View envs installed
+#### 5. View envs installed
 `conda info --envs`
 
-#### Activate the environment that you'd like to use
+#### 6. Activate the environment that you'd like to use
 
 [Conda 4.6 and later versions (all operating systems):](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 ```
@@ -74,7 +74,7 @@ conda activate earth-analytics-python
 The environment name is `earth-analytics-python` as
 defined in the `environment.yml` file.
 
-## Docker Build
+## 7. Docker Build
 
 [![Docker Automated build](https://img.shields.io/docker/automated/earthlab/earth-analytics-python-env.svg)](https://hub.docker.com/r/earthlab/earth-analytics-python-env/)
 
