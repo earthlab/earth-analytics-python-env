@@ -1,4 +1,4 @@
-# earth-analytics-environment
+# Earth Analytics Python Conda Environment
 
 [![Build Status](https://travis-ci.com/earthlab/earth-analytics-python-env.svg?branch=master)](https://travis-ci.com/earthlab/earth-analytics-python-env)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/38a49nccgpl1metv?svg=true)](https://ci.appveyor.com/project/mbjoseph/earth-analytics-python-env)
