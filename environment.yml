@@ -33,6 +33,8 @@ dependencies:
   - tweepy
   - xarray
   - scipy
+  - netcdf4
+  - nc-time-axis
 
   # Natural language processing
   - nltk
