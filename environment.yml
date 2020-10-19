@@ -35,6 +35,7 @@ dependencies:
   - scipy
   - netcdf4
   - nc-time-axis
+  - regionmask
 
   # Natural language processing
   - nltk
