@@ -50,6 +50,7 @@ dependencies:
   - ipython
   - jupyter_contrib_nbextensions
   - nbclean
+  - nbresuse
   # Autograding
   - matplotcheck>=0.1.2
   - nbgrader
