@@ -17,7 +17,7 @@ dependencies:
   # Spatial packages
   #- rasterio
   - pysal
-  - pyproj
+  - pyproj>=3.0
   - rasterstats
   - geopy
   - cartopy
