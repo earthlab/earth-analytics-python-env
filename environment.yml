@@ -17,14 +17,14 @@ dependencies:
   # Spatial packages
   #- rasterio
   - pysal
-  - pyproj
+  - pyproj>=3.0
   - rasterstats
   - geopy
   - cartopy
   #- geopandas
   - descartes
   - contextily
-  - earthpy=0.9.2
+  - earthpy
   - folium
   - geojson
   - mapboxgl
@@ -52,5 +52,5 @@ dependencies:
   - nbclean
   - nbresuse
   # Autograding
-  - matplotcheck>=0.1.2
+  - matplotcheck>=0.1.4
   - nbgrader
