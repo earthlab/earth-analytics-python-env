@@ -15,13 +15,11 @@ dependencies:
   - kiwisolver
 
   # Spatial packages
-  #- rasterio
   - pysal
   - pyproj>=3.0
   - rasterstats
   - geopy
   - cartopy
-  #- geopandas
   - descartes
   - contextily
   - earthpy
@@ -52,5 +50,5 @@ dependencies:
   - nbclean
   - nbresuse
   # Autograding
-  - matplotcheck>=0.1.4
+  - matplotcheck>=0.1.3
   - nbgrader
