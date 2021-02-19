@@ -30,7 +30,7 @@ dependencies:
   - geocoder
   - tweepy
   - xarray
-  - rioxarray
+  - rioxarray>=0.3.0
   - scipy
   - netcdf4
   - nc-time-axis
