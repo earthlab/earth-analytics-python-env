@@ -1,0 +1,39 @@
+# This workflow  runs tests for earthpy
+# Because we want a conda environment -  and that builds  slower,
+# we divided up  tests from linting and docs  to make  for simpler  install envts
+
+name: Test EA Python Envt Mac, Linux, Windows
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  runtests:
+    name: conda (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["ubuntu-latest", "macos-latest", "windows-latest"]
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          miniconda-version: 'latest'
+          channels: conda-forge
+          channel-priority: true
+          auto-update-conda: false
+          auto-activate-base: false
+          environment-file: environment.yml
+          activate-environment: earth-analytics-python
+      - run: conda list
+      - run: python -c "import earthpy"
+      - run: python -c "import rasterio"
