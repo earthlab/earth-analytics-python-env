@@ -2,7 +2,7 @@
 # Because we want a conda environment -  and that builds  slower,
 # we divided up  tests from linting and docs  to make  for simpler  install envts
 
-name: Run Tests - Matrix OS / Python Version
+name: Test EA Python Envt Mac, Linux, Windows
 
 on:
   push:
@@ -36,3 +36,4 @@ jobs:
           activate-environment: earth-analytics-python
       - run: conda list
       - run: python -c "import earthpy"
+      - run: python -c "import rasterio"
