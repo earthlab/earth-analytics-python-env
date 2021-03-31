@@ -8,11 +8,14 @@ dependencies:
   - pip
   # Core scientific python
   - numpy
-  - matplotlib
   - pyqt
-  - seaborn
   - tqdm
   - kiwisolver
+  
+  # Plotting
+  - matplotlib
+  - plotly
+  - seaborn
 
   # Spatial packages
   - pysal
