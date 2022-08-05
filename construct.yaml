@@ -1,0 +1,8 @@
+name: earth-analytics-python
+version: 0.1
+
+channels:
+  - conda-forge
+  - defaults
+
+environment_file: environment.yml
