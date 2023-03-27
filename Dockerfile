@@ -1,6 +1,6 @@
 FROM jupyter/minimal-notebook
 
-MAINTAINER Leah Wasser <leah.wasser@colorado.edu>
+LABEL maintainer="Earthlab Education <earthlab@colorado.edu>"
 
 COPY environment.yml environment.yml
 
