@@ -1,6 +1,6 @@
 FROM jupyter/minimal-notebook
 
-LABEL maintainer="Earthlab Education <earthlab@colorado.edu>"
+LABEL maintainer="Earthlab Education earth.lab@colorado.edu"
 
 COPY environment.yml environment.yml
 
