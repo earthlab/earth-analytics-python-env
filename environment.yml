@@ -4,8 +4,9 @@ channels:
   - defaults
 
 dependencies:
-  - python=3.8
+  - python=3.11
   - pip
+  
   # Core scientific python
   - numpy
   - pyqt
@@ -34,6 +35,7 @@ dependencies:
   - tweepy
   - xarray
   - rioxarray>=0.3.0
+  - xarray-spatial
   - scipy
   - netcdf4
   - nc-time-axis
@@ -45,7 +47,6 @@ dependencies:
 
   # Jupyter Environment
   - papermill
-  - autopep8
   - jupyterlab
   - notebook
   - ipython
@@ -53,6 +54,12 @@ dependencies:
   - nbclean
   - nbresuse
   
+  # QA
+  - flake8
+  - black
+  - autopep8
+  - pydocstyle
+  - nbqa
+  
   # Autograding
-  - matplotcheck>=0.1.3
   - nbgrader
