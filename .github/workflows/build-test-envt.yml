@@ -4,13 +4,7 @@
 
 name: Test EA Python Envt Mac, Linux, Windows
 
-on:
-  push:
-    branches:
-      - '*'
-  pull_request:
-    branches:
-      - '*'
+on: workflow_dispatch
 
 jobs:
   runtests:
