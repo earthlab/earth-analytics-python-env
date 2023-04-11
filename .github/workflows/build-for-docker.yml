@@ -1,0 +1,25 @@
+name: Test environment for Docker
+
+on: workflow_dispatch
+
+jobs:
+  runtests:
+    name: "Set up environment"
+    runs-on: "ubuntu-latest"
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          miniconda-version: 'latest'
+          channels: conda-forge
+          channel-priority: true
+          auto-update-conda: false
+          auto-activate-base: false
+          environment-file: environment.yml
+          activate-environment: earth-analytics-python
+      - run: conda list
+      - run: python -c "import earthpy"
+      - run: python -c "import rasterio"
