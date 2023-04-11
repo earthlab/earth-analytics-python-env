@@ -2,9 +2,7 @@
 # main  branch only
 name: Push to Docker Hub from Main Branch
 
-on:
-  push:
-    branches: main
+on: workflow_dispatch
 
 jobs:
   build-push-image:
