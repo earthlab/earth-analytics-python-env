@@ -13,7 +13,7 @@ RUN mamba env create -f /home/jovyan/environment.yml
 RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> /home/jovyan/.bash_profile && \
     echo "conda deactivate" >> /home/jovyan/.bash_profile && \
     echo "conda activate earth-analytics-python" >> /home/jovyan/.bash_profile
-RUN . /opt/conda/etc/profile.d/conda.sh && conda activate Earthlab && python -m ipykernel install --user --name earth-analytics-python     
+RUN . /opt/conda/etc/profile.d/conda.sh && conda activate earth-analytics-python && python -m ipykernel install --user --name earth-analytics-python     
 RUN source /home/jovyan/.bash_profile
 
 # Install JupyterLab widget extensions
