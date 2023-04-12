@@ -2,9 +2,10 @@ name: earth-analytics-python
 channels:
   - conda-forge
   - defaults
+  - pytorch
 
 dependencies:
-  - python=3.11
+  - python=3.10
   - pip
   
   # Core scientific python
@@ -12,6 +13,11 @@ dependencies:
   - pyqt
   - tqdm
   - kiwisolver
+  
+  # ML
+  - scikit-learn
+  - pytorch
+  - torchvision
   
   # Plotting
   - matplotlib
