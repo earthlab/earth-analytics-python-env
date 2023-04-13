@@ -1,4 +1,4 @@
-FROM harbor.cyverse.org/vice/jupyter/datascience:latest
+FROM jupyter/minimal-notebook
 
 USER jovyan
 
