@@ -1,4 +1,4 @@
-FROM jupyter/minimal-notebook
+FROM continuumio/miniconda3
 
 USER jovyan
 
