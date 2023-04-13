@@ -17,7 +17,6 @@ RUN . /opt/conda/etc/profile.d/conda.sh && conda activate earth-analytics-python
 RUN source /home/jovyan/.bash_profile
 
 # Install JupyterLab widget extensions
-RUN sudo chown -R 1000:100 /opt/conda/share
 RUN jupyter labextension install \
     ipyvolume \
     itkwidgets \    
