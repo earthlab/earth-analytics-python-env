@@ -1,5 +1,6 @@
 FROM continuumio/miniconda3
 
+RUN useradd -ms /bin/bash jovyan
 USER jovyan
 
 RUN conda update conda 
