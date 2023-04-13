@@ -1,6 +1,5 @@
-FROM continuumio/miniconda3
+FROM jupyter/minimal-notebook
 
-RUN useradd -ms /bin/bash jovyan
 USER jovyan
 
 RUN conda update conda 
