@@ -1,6 +1,6 @@
 # This build will build and push the image to docker hub upon a commit to the
 # main  branch only
-name: Push to Docker Hub from Main Branch
+name: Push to Docker Hub
 
 on: workflow_dispatch
 
