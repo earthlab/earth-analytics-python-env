@@ -23,7 +23,6 @@ RUN jupyter labextension install \
     jupyterlab_iframe \ 
     jupyter-leaflet \
     jupyter-threejs \
-    nbgrader \
  && npm cache clean --force
 
 RUN jupyter lab build
