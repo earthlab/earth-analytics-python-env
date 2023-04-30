@@ -63,6 +63,7 @@ dependencies:
   
   # QA
   - flake8
+  - flake8-import-order
   - black
   - autopep8
   - pydocstyle
