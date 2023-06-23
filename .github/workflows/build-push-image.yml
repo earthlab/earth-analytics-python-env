@@ -24,7 +24,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: earthlab/earth-analytics-python-env:${GITHUB_REF##*/}
+          tags: earthlab/earth-analytics-python-env:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
