@@ -23,6 +23,7 @@ dependencies:
   - matplotlib
   - plotly
   - seaborn
+  - hvplot
 
   # Spatial packages
   - pysal
@@ -60,6 +61,11 @@ dependencies:
   - jupyter_contrib_nbextensions
   - nbclean
   - nbresuse
+
+  # Textbook Format
+  - jupyter-book
+  - sphinx-exercise
+  - ghp-import
   
   # QA
   - flake8
