@@ -19,9 +19,3 @@ RUN source /home/jovyan/.bash_profile
 
 # Install dev version of Earthpy
 RUN pip install git+https://github.com/earthlab/earthpy@apppears
-
-# Install gnome keyring
-USER root
-RUN apt-get install -y libdbus-glib-1-dev
-RUN pip install secretstorage dbus-python
-USER jovyan
