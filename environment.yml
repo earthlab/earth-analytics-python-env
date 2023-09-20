@@ -2,7 +2,6 @@ name: earth-analytics-python
 channels:
   - conda-forge
   - defaults
-  - pytorch
 
 dependencies:
   - python=3.10
@@ -16,14 +15,13 @@ dependencies:
   
   # ML
   - scikit-learn
-  # - pytorch
-  # - torchvision
   
   # Plotting
   - matplotlib
   - plotly
   - seaborn
   - hvplot
+  - geoviews
 
   # Spatial packages
   - pysal
@@ -33,7 +31,6 @@ dependencies:
   - cartopy
   - descartes
   - contextily
-  - earthpy
   - folium
   - geojson
   - mapboxgl
@@ -42,7 +39,6 @@ dependencies:
   - tweepy
   - xarray
   - rioxarray>=0.3.0
-  # - xarray-spatial
   - h5py
   - scipy
   - netcdf4
@@ -58,7 +54,6 @@ dependencies:
   - jupyterlab
   - notebook
   - ipython
-  - jupyter_contrib_nbextensions
   - nbclean
   - nbresuse
 
