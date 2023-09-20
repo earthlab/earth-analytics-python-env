@@ -36,7 +36,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: earthlab/earth-analytics-python-env:latest
+          tags: earthlab/earth-analytics-dev-env:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
