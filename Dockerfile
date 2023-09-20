@@ -22,5 +22,5 @@ RUN pip install git+https://github.com/earthlab/earthpy@apppears
 
 # Install gnome keyring
 USER root
-RUN apt-get install -y gnome-keyring
+RUN apt-get install -y libgnome-keyring
 USER jovyan
