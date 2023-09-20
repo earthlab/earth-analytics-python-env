@@ -17,6 +17,9 @@ RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> /home/jovyan/.bash_profile && 
 RUN . /opt/conda/etc/profile.d/conda.sh && conda activate base && python -m ipykernel install --user --name base     
 RUN source /home/jovyan/.bash_profile
 
+# Install dev version of Earthpy
+RUN pip install git+https://github.com/earthlab/earthpy@apppears
+
 # Install JupyterLab widget extensions
 RUN jupyter labextension install \
     ipyvolume \
