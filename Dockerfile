@@ -19,15 +19,3 @@ RUN source /home/jovyan/.bash_profile
 
 # Install dev version of Earthpy
 RUN pip install git+https://github.com/earthlab/earthpy@apppears
-
-# Install JupyterLab widget extensions
-RUN jupyter labextension install \
-    ipyvolume \
-    itkwidgets \    
-    jupyterlab_iframe \ 
-    jupyter-leaflet \
-    jupyter-threejs \
-    nbgrader \
- && npm cache clean --force
-
-RUN jupyter lab build
