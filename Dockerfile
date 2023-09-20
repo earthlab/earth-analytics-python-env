@@ -19,3 +19,6 @@ RUN source /home/jovyan/.bash_profile
 
 # Install dev version of Earthpy
 RUN pip install git+https://github.com/earthlab/earthpy@apppears
+
+# Install gnome keyring
+RUN apt-get install -y gnome-keyring
