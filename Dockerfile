@@ -21,4 +21,6 @@ RUN source /home/jovyan/.bash_profile
 RUN pip install git+https://github.com/earthlab/earthpy@apppears
 
 # Install gnome keyring
+USER root
 RUN apt-get install -y gnome-keyring
+USER jovyan
