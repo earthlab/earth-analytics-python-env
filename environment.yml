@@ -21,7 +21,9 @@ dependencies:
   - plotly
   - seaborn
   - hvplot
-  - geoviews
+  - geoviews>=1.10
+  - selenium
+  - phantomjs
 
   # Spatial packages
   - pysal
