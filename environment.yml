@@ -24,6 +24,7 @@ dependencies:
   - geoviews>=1.10
   - selenium
   - phantomjs
+  - jupyter_bokeh
 
   # Spatial packages
   - pysal
@@ -46,6 +47,7 @@ dependencies:
   - netcdf4
   - nc-time-axis
   - regionmask
+  - pyogrio
 
   # Natural language processing
   - nltk
