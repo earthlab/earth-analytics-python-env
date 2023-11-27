@@ -6,7 +6,6 @@ RUN conda update conda
 RUN conda config --remove channels conda-forge
 RUN conda config --add channels conda-forge
 RUN conda config --set channel_priority strict
-RUN conda install mamba -c conda-forge
 
 COPY environment.yml /home/jovyan/ 
 RUN mamba env update -n base -f /home/jovyan/environment.yml
