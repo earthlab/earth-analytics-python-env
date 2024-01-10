@@ -13,8 +13,9 @@ dependencies:
   - tqdm
   - kiwisolver
   
-  # ML
+  # ML and modeling
   - scikit-learn
+  - scikit-fuzzy
   
   # Plotting
   - matplotlib
