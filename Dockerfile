@@ -2,6 +2,10 @@ FROM jupyter/minimal-notebook:python-3.10
 
 USER jovyan
 
+RUN apt-get update && \
+    apt install -y \
+    libfmt-dev
+
 RUN conda update conda 
 RUN conda config --remove channels conda-forge
 RUN conda config --add channels conda-forge
