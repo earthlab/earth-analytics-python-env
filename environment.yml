@@ -16,6 +16,10 @@ dependencies:
   # ML and modeling
   - scikit-learn
   - scikit-fuzzy
+
+  # Data access
+  - earthpy
+  - pystac-client
   
   # Plotting
   - matplotlib
