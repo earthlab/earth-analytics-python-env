@@ -19,6 +19,8 @@ jobs:
         shell: bash -l {0}
     steps:
       - uses: actions/checkout@v2
+        with:
+            ref: upgrade-to-3.9
       - uses: conda-incubator/setup-miniconda@v2
         with:
           miniconda-version: 'latest'
