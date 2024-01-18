@@ -1,9 +1,9 @@
-FROM jupyter/minimal-notebook:python-3.10
+FROM jupyter/minimal-notebook:python-3.11
 
 # Installing package for libmamba
 USER root
 RUN apt-get update && \
-    apt install -y \
+    apt-get install -y \
     libfmt-dev
 USER jovyan
 
@@ -11,7 +11,8 @@ USER jovyan
 RUN conda update conda 
 RUN conda config --remove channels conda-forge
 RUN conda config --add channels conda-forge
-RUN conda config --set channel_priority strict
+#RUN conda config --set channel_priority strict
+#RUN conda config --set solver classic
 
 # Create environment
 COPY environment.yml /home/jovyan/ 
