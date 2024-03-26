@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   runtests:
     name: "Set up environment"
-    runs-on: "ubuntu-latest"
+    runs-on: "ubuntu-20.04"
     defaults:
       run:
         shell: bash -l {0}
