@@ -4,7 +4,9 @@ FROM jupyter/minimal-notebook:python-3.11
 USER root
 RUN apt-get update && \
     apt-get install -y \
-    libfmt-dev
+    libfmt-dev \ 
+    libtiff5
+
 USER jovyan
 
 # Set up conda
