@@ -23,6 +23,7 @@ dependencies:
   - pyogrio
   # Raster data
   - xarray
+  - libtiff
   - h5py
   - netcdf4
   - rioxarray>=0.3.0
