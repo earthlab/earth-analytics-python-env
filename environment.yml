@@ -9,9 +9,34 @@ dependencies:
   
   # Core scientific python
   - numpy
-  - pyqt
+  - pandas
+  - scipy
+
+  # Geospatial libraries
+  # Coordinates and CRSs
+  - pyproj>=3.0
+  - geopy
+  - cartopy
+  # Vector data
+  - geopandas
+  - geojson
+  - pyogrio
+  # Raster data
+  - xarray
+  - h5py
+  - netcdf4
+  - rioxarray>=0.3.0
+  - xarray-spatial
+  - regionmask
+  
+  # Interactive computing
+  - ipython
+  - jupyterlab
+  - notebook
   - tqdm
-  - kiwisolver
+  - nbresuse
+  - papermill
+  - nbclean
   
   # ML and modeling
   - scikit-learn
@@ -19,59 +44,24 @@ dependencies:
 
   # Data access
   - earthpy
+  - earthaccess
   - pystac-client
   
   # Plotting
+  # Matplotlib
   - matplotlib
-  - plotly
+  - nc-time-axis
+  - descartes
+  - contextily
   - seaborn
+  # Holoviews
   - hvplot
   - geoviews>=1.10
   - selenium
   - phantomjs
   - jupyter_bokeh
-
-  # Spatial packages
-  - libtiff
-  - pysal
-  - pyproj>=3.0
-  - rasterstats
-  - geopy
-  - cartopy
-  - descartes
-  - contextily
+  # Folium
   - folium
-  - geojson
-  - mapboxgl
-  - hydrofunctions
-  - geocoder
-  - tweepy
-  - xarray
-  - rioxarray>=0.3.0
-  - xarray-spatial
-  - h5py
-  - scipy
-  - netcdf4
-  - nc-time-axis
-  - regionmask
-  - pyogrio
-
-  # Natural language processing
-  - nltk
-  - textblob
-
-  # Jupyter Environment
-  - papermill
-  - jupyterlab
-  - notebook
-  - ipython
-  - nbclean
-  - nbresuse
-
-  # Textbook Format
-  - jupyter-book
-  - sphinx-exercise
-  - ghp-import
   
   # QA
   - flake8
@@ -80,6 +70,3 @@ dependencies:
   - autopep8
   - pydocstyle
   - nbqa
-  
-  # Autograding
-  - nbgrader
