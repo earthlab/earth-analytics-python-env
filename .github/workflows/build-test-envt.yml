@@ -10,9 +10,9 @@ jobs:
       fail-fast: false
       matrix:
         os: 
-          - "ubuntu-20.04"
-          - "macos-latest-large"
-          - "macos-latest-xlarge"
+          - "ubuntu-latest"
+          - "macos-13"
+          - "macos-latest"
           - "windows-latest"
     defaults:
       run:
