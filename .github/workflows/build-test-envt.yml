@@ -18,10 +18,10 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.1.7
         with:
             ref: upgrade-to-3.9
-      - uses: conda-incubator/setup-miniconda@v2
+      - uses: conda-incubator/setup-miniconda@v3.0.4
         with:
           miniconda-version: 'latest'
           channels: conda-forge
