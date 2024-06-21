@@ -9,14 +9,18 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ["ubuntu-20.04", "macos-latest", "windows-latest"]
+        os: 
+          - "ubuntu-20.04"
+          - "macos-latest-large"
+          - "macos-latest-xlarge"
+          - "windows-latest"
     defaults:
       run:
         shell: bash -el {0}
     steps:
       - uses: actions/checkout@v4.1.7
         with:
-            ref: upgrade-to-3.9
+            ref: ${{ github.head_ref || github.ref_name }}
       - uses: conda-incubator/setup-miniconda@v3.0.4
         with:
           auto-activate-base: false
@@ -24,4 +28,5 @@ jobs:
           activate-environment: earth-analytics-python
       - run: conda list
       - run: python -c "import earthpy"
+      - run: python -c "import geopandas"
       - run: python -c "import rioxarray"
