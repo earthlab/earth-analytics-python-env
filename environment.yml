@@ -1,7 +1,7 @@
 name: earth-analytics-python
 channels:
-  - defaults
   - conda-forge
+  - defaults
 
 dependencies:
   - python=3.11
