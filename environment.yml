@@ -4,55 +4,69 @@ channels:
   - defaults
 
 dependencies:
-  - python=3.8
+  - python=3.11
   - pip
+  
   # Core scientific python
   - numpy
-  - pyqt
-  - tqdm
-  - kiwisolver
-  
-  # Plotting
-  - matplotlib
-  - plotly
-  - seaborn
+  - pandas
+  - scipy
 
-  # Spatial packages
-  - pysal
+  # Geospatial libraries
+  # Coordinates and CRSs
   - pyproj>=3.0
-  - rasterstats
   - geopy
   - cartopy
-  - descartes
-  - contextily
-  - earthpy
-  - folium
+  # Vector data
+  - geopandas
   - geojson
-  - mapboxgl
-  - hydrofunctions
-  - geocoder
-  - tweepy
+  - pyogrio
+  # Raster data
   - xarray
-  - rioxarray>=0.3.0
-  - scipy
+  - h5py
   - netcdf4
-  - nc-time-axis
+  - rioxarray>=0.3.0
+  - xarray-spatial
   - regionmask
-
-  # Natural language processing
-  - nltk
-  - textblob
-
-  # Jupyter Environment
-  - papermill
-  - autopep8
+  
+  # Interactive computing
+  - ipython
   - jupyterlab
   - notebook
-  - ipython
-  - jupyter_contrib_nbextensions
-  - nbclean
+  - tqdm
   - nbresuse
+  - papermill
+  - nbclean
   
-  # Autograding
-  - matplotcheck>=0.1.3
-  - nbgrader
+  # ML and modeling
+  - scikit-learn
+  - scikit-fuzzy
+
+  # Data access
+  - earthpy
+  - earthaccess
+  - pystac-client
+  
+  # Plotting
+  # Matplotlib
+  - matplotlib
+  - nc-time-axis
+  - descartes
+  - contextily
+  - seaborn
+  # Holoviews
+  - hvplot
+  - geoviews>=1.10
+  - selenium
+  - phantomjs
+  - jupyter_bokeh
+  # Folium
+  - folium
+  
+  # QA
+  - flake8
+  - flake8-import-order
+  - black
+  - autopep8
+  - pydocstyle
+  - nbqa
