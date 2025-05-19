@@ -30,4 +30,4 @@ RUN . /opt/conda/etc/profile.d/conda.sh && conda activate base && python -m ipyk
 RUN source /home/jovyan/.bash_profile
 
 # Install dev version of Earthpy
-RUN pip install git+https://github.com/earthlab/earthpy@apppears
+RUN pip install git+https://github.com/earthlab/earthpy@main
