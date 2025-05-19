@@ -1,4 +1,4 @@
-FROM jupyter/minimal-notebook:python-3.11
+FROM jupyter/minimal-notebook:python-3.12
 
 # Installing package for libmamba
 USER root
