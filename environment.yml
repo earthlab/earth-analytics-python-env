@@ -4,13 +4,14 @@ channels:
   - defaults
 
 dependencies:
-  - python=3.11
+  - python=3.12
   - pip
   
   # Core scientific python
   - numpy
   - pandas
   - scipy
+  - dask
 
   # Geospatial libraries
   # Coordinates and CRSs
@@ -46,6 +47,9 @@ dependencies:
   - earthpy
   - earthaccess
   - pystac-client
+  - adlfs
+  - dataretrieval
+  - osmnx
   
   # Plotting
   # Matplotlib
@@ -55,6 +59,8 @@ dependencies:
   - contextily
   - seaborn
   # Holoviews
+  # --- Avoid compatibility issues with bokeh and new holoviews
+  - holoviews<=1.19
   - hvplot
   - geoviews>=1.10
   - selenium
@@ -70,3 +76,6 @@ dependencies:
   - autopep8
   - pydocstyle
   - nbqa
+
+  - pip:
+    - pygbif
