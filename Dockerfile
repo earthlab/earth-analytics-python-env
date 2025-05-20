@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3:25.1.1-2
+FROM jupyter/minimal-notebook:python-3.11
 
 # Installing package for libmamba
 USER root
