@@ -13,10 +13,13 @@ USER jovyan
 RUN conda update conda 
 RUN conda config --remove channels conda-forge
 RUN conda config --add channels conda-forge
+#RUN conda config --set channel_priority strict
+#RUN conda config --set solver classic
 
 # Create environment
 COPY environment.yml /home/jovyan/ 
-RUN conda env update -n base -f /home/jovyan/environment.yml
+RUN conda install -n base -c conda-forge mamba
+RUN mamba env update -n base -f /home/jovyan/environment.yml
 
 # Activating environment
 RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> /home/jovyan/.bash_profile && \
