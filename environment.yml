@@ -4,7 +4,7 @@ channels:
   - defaults
 
 dependencies:
-  - python=3.11
+  - python=3.12
   - pip
   
   # Core scientific python
@@ -15,6 +15,7 @@ dependencies:
 
   # Geospatial libraries
   # Coordinates and CRSs
+  - gdal
   - pyproj>=3.0
   - geopy
   - cartopy
@@ -44,7 +45,6 @@ dependencies:
   - scikit-fuzzy
 
   # Data access
-  - earthpy
   - earthaccess
   - pystac-client
   - adlfs
@@ -65,6 +65,7 @@ dependencies:
   - geoviews>=1.10
   - selenium
   - phantomjs
+  - pillow
   - jupyter_bokeh
   # Folium
   - folium
@@ -78,4 +79,5 @@ dependencies:
   - nbqa
 
   - pip:
+    - earthpy
     - pygbif
