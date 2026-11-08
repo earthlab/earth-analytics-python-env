@@ -1,10 +1,10 @@
   name: earth-analytics-python-lj
 
-channels:
+  channels:
   - conda-forge
   - nodefaults  # exclude defaults; keep compiled geospatial packages on conda-forge
 
-dependencies:
+  dependencies:
   # rioxarray 0.24 requires Python >=3.13.
   # Allow the newest compatible Python 3.13 patch release.
   - python=3.13
@@ -61,7 +61,7 @@ dependencies:
   - adlfs
   - dataretrieval
   - osmnx
-  
+
   # Plotting: Matplotlib
   - matplotlib
   - nc-time-axis
