@@ -1,26 +1,27 @@
-name: earth-analytics-python-lj
+  name: earth-analytics-python-lj
 
 channels:
   - conda-forge
-  - nodefaults          # never fall back to Anaconda defaults (mixing channels breaks GDAL/PROJ)
+  - nodefaults  # exclude defaults; keep compiled geospatial packages on conda-forge
 
 dependencies:
-  - python=3.11
+  # rioxarray 0.24 requires Python >=3.13.
+  # Allow the newest compatible Python 3.13 patch release.
+  - python=3.13
   - pip
-  - git                 # needed for the earthpy GitHub install on Windows
 
-  # Core scientific python
+  # Core scientific Python
   - numpy
   - pandas
   - scipy
   - dask
 
-  # Geospatial core (all from conda-forge, never pip)
-  - gdal                # provides `from osgeo import gdal`
+  # Geospatial core: install through conda-forge
+  - gdal  # provides: from osgeo import gdal
   - rasterio
   - pyproj>=3.0
   - geopy
-  - cartopy
+  - cartopy>=0.26
   - geopandas
   - geojson
   - pyogrio
@@ -29,22 +30,26 @@ dependencies:
   - xarray
   - h5py
   - netcdf4
-  - rioxarray>=0.3.0
+  - rioxarray>=0.24
   - xarray-spatial
   - regionmask
 
-  # earthpy dependencies, installed by conda so pip doesn't fetch GDAL-bundling wheels
+  # Preinstall EarthPy dependencies through conda to minimize pip changes.
+  # Pip may still install dependencies if its requirements are unmet.
   - scikit-image
   - requests
+  - keyring
+  - platformdirs
 
   # Interactive computing
   - ipython
+  - ipykernel
   - jupyterlab
   - notebook
   - tqdm
-  - jupyter-resource-usage   # renamed from nbresuse
+  - jupyter-resource-usage
   - papermill
-  - nbclean                  
+  - nb-clean  # notebook output/metadata cleaning; separate from nbclean
 
   # ML and modeling
   - scikit-learn
@@ -56,22 +61,24 @@ dependencies:
   - adlfs
   - dataretrieval
   - osmnx
-
-  # Plotting: matplotlib
+  
+  # Plotting: Matplotlib
   - matplotlib
   - nc-time-axis
   - contextily
   - seaborn
 
-  # Plotting: HoloViz -- solve together, no upper pin
+  # Plotting: HoloViz; let conda solve compatible versions together
   - holoviews>=1.20
   - hvplot
-  - geoviews>=1.10
+  - geoviews>=1.16
   - panel
   - bokeh
   - jupyter_bokeh
+
+  # Browser support for Bokeh PNG export
   - selenium
-  - firefox                  # replaces phantomjs for Bokeh PNG export
+  - firefox
   - geckodriver
 
   # Folium
@@ -85,6 +92,8 @@ dependencies:
   - pydocstyle
   - nbqa
 
+  # Install pip packages after the conda dependencies.
   - pip:
       - pygbif
-      - git+https://github.com/earthlab/earthpy.git@v0.10.1
+      - earthpy==1.0.0
+

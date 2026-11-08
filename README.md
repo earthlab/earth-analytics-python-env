@@ -18,7 +18,8 @@ Welcome to the Earth Analytics `Python` Environment Repository! Here you will fi
 * Chris Holdgraf (@choldgraf)
 * Max Joseph  (@mbjoseph)
 * Martha Morrissey
-* Lilly Jones (lijo8146)
+* Lilly Jones (@lijo8146)
+* Erin Noonan (@eenoonan)
 
 ## Getting started with the Conda Environment
 
