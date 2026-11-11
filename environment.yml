@@ -1,74 +1,89 @@
-name: earth-analytics-python
-channels:
-  - conda-forge
-  - defaults
+  name: earth-analytics-python-lj
 
-dependencies:
-  - python=3.11
+  channels:
+  - conda-forge
+  - nodefaults  # exclude defaults; keep compiled geospatial packages on conda-forge
+
+  dependencies:
+  # rioxarray 0.24 requires Python >=3.13.
+  # Allow the newest compatible Python 3.13 patch release.
+  - python=3.13
   - pip
-  
-  # Core scientific python
+
+  # Core scientific Python
   - numpy
   - pandas
   - scipy
   - dask
 
-  # Geospatial libraries
-  # Coordinates and CRSs
+  # Geospatial core: install through conda-forge
+  - gdal  # provides: from osgeo import gdal
+  - rasterio
   - pyproj>=3.0
   - geopy
-  - cartopy
-  # Vector data
+  - cartopy>=0.26
   - geopandas
   - geojson
   - pyogrio
+
   # Raster data
   - xarray
   - h5py
   - netcdf4
-  - rioxarray>=0.3.0
+  - rioxarray>=0.24
   - xarray-spatial
   - regionmask
-  
+
+  # Preinstall EarthPy dependencies through conda to minimize pip changes.
+  # Pip may still install dependencies if its requirements are unmet.
+  - scikit-image
+  - requests
+  - keyring
+  - platformdirs
+
   # Interactive computing
   - ipython
+  - ipykernel
   - jupyterlab
   - notebook
   - tqdm
-  - nbresuse
+  - jupyter-resource-usage
   - papermill
-  - nbclean
-  
+  - nb-clean  # notebook output/metadata cleaning; separate from nbclean
+
   # ML and modeling
   - scikit-learn
   - scikit-fuzzy
 
   # Data access
-  - earthpy
   - earthaccess
   - pystac-client
   - adlfs
   - dataretrieval
   - osmnx
-  
-  # Plotting
-  # Matplotlib
+
+  # Plotting: Matplotlib
   - matplotlib
   - nc-time-axis
-  - descartes
   - contextily
   - seaborn
-  # Holoviews
-  # --- Avoid compatibility issues with bokeh and new holoviews
-  - holoviews<=1.19
+
+  # Plotting: HoloViz; let conda solve compatible versions together
+  - holoviews>=1.20
   - hvplot
-  - geoviews>=1.10
-  - selenium
-  - phantomjs
+  - geoviews>=1.16
+  - panel
+  - bokeh
   - jupyter_bokeh
+
+  # Browser support for Bokeh PNG export
+  - selenium
+  - firefox
+  - geckodriver
+
   # Folium
   - folium
-  
+
   # QA
   - flake8
   - flake8-import-order
@@ -77,5 +92,8 @@ dependencies:
   - pydocstyle
   - nbqa
 
+  # Install pip packages after the conda dependencies.
   - pip:
-    - pygbif
+      - pygbif
+      - earthpy==1.0.0
+
